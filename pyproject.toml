@@ -20,6 +20,9 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "plotly>=5.24.0",
     "httpx>=0.28.0",
+    "nest-asyncio>=1.6.0",
+    "ipykernel>=6.29.0",
+    "ipywidgets>=8.1.0",
 ]
 
 [project.optional-dependencies]
@@ -42,6 +45,8 @@ dev-dependencies = [
     "pytest-cov>=6.0.0",
     "ruff>=0.8.0",
     "mypy>=1.13.0",
+    "jupyter>=1.1.0",
+    "nbformat>=5.10.0",
 ]
 
 [tool.ruff]
