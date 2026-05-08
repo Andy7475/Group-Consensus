@@ -1,0 +1,49 @@
+================================================================
+  FASTER GROUP DECISIONS — AN EXPERIMENT
+================================================================
+
+  [YOUR NAME]  |  [DATE]
+
+
+Getting groups to a decision they'll actually commit to is
+slow. Workshops surface the loudest voices. Surveys miss
+the nuance. The reservations people didn't voice come out
+six months later.
+
+In 2024, Google DeepMind published research showing that an
+AI-assisted process produced better-endorsed outcomes than
+human facilitation alone — tested with over 5,000 people on
+genuinely contested topics. The AI reads every participant's
+view, drafts candidate consensus statements, and selects the
+one with the broadest real support. A human facilitator then
+works with that, rather than spending the first hour of a
+workshop discovering what people think.
+
+I've extended this with an opinion mapping layer. After the
+deliberation, participants spend two minutes rating a
+shortlist of statements. The system groups people by how
+similarly they voted and produces a simple map showing where
+the groups sit, what bridges all of them, and where the real
+tension is. A facilitator walks in with that picture already.
+
+
+----------------------------------------------------------------
+  THE ASK
+----------------------------------------------------------------
+
+I'm looking for a small number of people to try this on
+something real — a team decision, a ways-of-working question,
+anything where a group needs to land somewhere together.
+
+Your time across all three steps: about 10 minutes, spread
+over a week.
+
+In return you get a clear picture of where opinion actually
+sits in your group, a set of consensus statements to work
+with, and a straight debrief on what the process did and
+didn't do well.
+
+If that sounds useful, get in touch.
+
+[YOUR NAME]
+[YOUR CONTACT]
