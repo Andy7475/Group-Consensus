@@ -1,0 +1,174 @@
+================================================================
+  FASTER DECISIONS, BETTER DECISIONS
+  A new approach to group consensus — and an ask
+================================================================
+
+  Written by: [YOUR NAME]
+  Date: [DATE]
+
+
+----------------------------------------------------------------
+THE PROBLEM THIS IS TRYING TO SOLVE
+----------------------------------------------------------------
+
+Getting groups to genuine decisions is slow. Not because
+people are difficult — because the process usually is.
+
+Workshops surface the loudest voices. Surveys flatten
+nuance into numbers. Consultations produce reports nobody
+reads. And somewhere in the middle, the thing people
+actually needed — to feel heard, to understand each other,
+and to land somewhere everyone can commit to — gets lost.
+
+The result is decisions that look like consensus but
+aren't. People leave the room with reservations they never
+voiced. Change programmes stall. The same conversation
+happens again six months later.
+
+
+----------------------------------------------------------------
+WHAT THE RESEARCH SHOWS
+----------------------------------------------------------------
+
+In 2024, Google DeepMind published a study in the journal
+Science. They worked with over 5,000 people on genuinely
+contested topics — the kind where people hold strong and
+opposing views.
+
+They found that an AI-assisted process consistently
+produced statements that more people genuinely endorsed
+than those produced by traditional human facilitation.
+Not because the AI replaced the facilitator — but because
+it could do something no human can do at speed:
+
+  Read every single person's view carefully.
+  Hold all of it in mind simultaneously.
+  Draft candidate statements that try to honour
+  the concerns on all sides.
+  Predict how each person would rank those options.
+  Select the one with the broadest genuine support.
+
+Then give that to a human facilitator as a starting point,
+not a conclusion.
+
+The key word is genuine. The process is specifically
+designed to find formulations that people across different
+positions can accept — not statements that win a majority
+while leaving a significant minority cold.
+
+
+----------------------------------------------------------------
+WHAT I'VE ADDED
+----------------------------------------------------------------
+
+The DeepMind approach produces a refined consensus
+statement. That's valuable. But it doesn't tell you much
+about the shape of opinion in the room — who thinks like
+whom, where the real fault lines are, and which ideas
+genuinely bridge the divides versus which ones just happen
+to win the vote.
+
+I've added an opinion mapping layer that does exactly that.
+
+After the initial deliberation, participants spend two
+minutes rating a shortlist of statements. The system then
+groups people by how similarly they voted — not by their
+job title, their team, or anything else. Just by the
+actual pattern of what they agreed and disagreed on.
+
+The result is a simple map showing:
+
+  WHERE THE GROUPS ARE
+  Who tends to see things similarly, and how distinct
+  the groups are from each other.
+
+  WHAT BRIDGES THEM
+  Statements that every group could accept — genuine
+  common ground, not just a majority position.
+
+  WHERE THE REAL TENSION IS
+  Statements that one group strongly supports and another
+  strongly rejects. These are the conversations worth
+  having, because they're the ones that will surface
+  anyway — better to surface them deliberately.
+
+A human facilitator walking into a room with this
+information already knows the landscape. Instead of
+spending the first hour discovering where people stand,
+they can go straight to the work that matters.
+
+
+----------------------------------------------------------------
+WHY THIS IS USEFUL FOR CHANGE WORK
+----------------------------------------------------------------
+
+Most of the resistance that slows change programmes down
+isn't irrational. It's unexpressed. People have concerns
+they didn't voice in the consultation, needs that weren't
+captured in the survey, and a general sense that nobody
+quite understood what they were trying to say.
+
+This process is specifically designed to surface that.
+The question it asks isn't "do you support this?" —
+it's "what matters to you, and what would make this
+unworkable?" That distinction changes what you get back.
+
+It also scales. The deep deliberation phase works well
+with groups of 5 to 20. The opinion mapping can handle
+hundreds. You could run an intensive session with team
+leads and then circulate the resulting statements to the
+whole department to map where the broader population sits.
+
+
+----------------------------------------------------------------
+WHERE I'VE GOT TO
+----------------------------------------------------------------
+
+I've built a working version of the approach and I'm
+running a first trial now — a small group, a low-stakes
+decision, deliberately chosen so I can stress-test the
+process before using it with clients.
+
+The trial will tell me:
+  - How good the AI-generated statements actually are
+  - Whether the critique round produces meaningful
+    refinement or just noise
+  - How clear the opinion map is to someone who wasn't
+    involved in building it
+  - What a facilitator briefing based on this looks like
+    in practice
+
+
+----------------------------------------------------------------
+THE ASK
+----------------------------------------------------------------
+
+I'm looking for a small number of people willing to try
+the process on something real.
+
+It doesn't need to be a high-stakes decision. It just
+needs to be a question where a group of people genuinely
+have different views and need to land somewhere together.
+A team priority, a ways-of-working question, a policy
+discussion — anything that would normally require a
+workshop or a lengthy email chain.
+
+Your involvement across all three stages would take about
+10 minutes of your time, spread over a week or so.
+
+In return, you'd get:
+  - A clear picture of where your group's opinion
+    landscape actually is
+  - A set of statements reflecting genuine common ground
+  - A facilitator brief you could use immediately
+  - A candid debrief on how well the process worked
+    and where it fell short
+
+This is an experiment, not a product. I'll be honest
+about what it does well and what still needs work.
+
+If you're curious, reply to this and we'll find something
+suitable to try it on.
+
+[YOUR NAME]
+[YOUR CONTACT]
