@@ -1,0 +1,75 @@
+Subject: Step 3 — two minutes to vote (closes [DEADLINE])
+
+Hi all,
+
+Final step. Below are [N] statements produced through the
+process so far. Please rate each one.
+
+
+================================================================
+  HOW TO VOTE
+================================================================
+
+  For each statement:   Agree / Pass / Disagree
+
+  Agree     = I could genuinely support this
+  Pass      = I have no strong view either way
+  Disagree  = I have a real problem with this
+
+  [RESPONSE METHOD]
+
+  Deadline: [DEADLINE]
+
+
+================================================================
+  THE STATEMENTS
+================================================================
+
+  Statement 1
+  -----------------------------------------------------------
+  [STATEMENT 1]
+
+
+  Statement 2
+  -----------------------------------------------------------
+  [STATEMENT 2]
+
+
+  Statement 3
+  -----------------------------------------------------------
+  [STATEMENT 3]
+
+
+  Statement 4
+  -----------------------------------------------------------
+  [STATEMENT 4]
+
+
+  Statement 5
+  -----------------------------------------------------------
+  [STATEMENT 5]
+
+
+  Statement 6
+  -----------------------------------------------------------
+  [STATEMENT 6]
+
+
+================================================================
+  WHAT HAPPENS NEXT
+================================================================
+
+The votes get run through a clustering algorithm that
+groups people by similar voting patterns — not by team or
+any other label, just by how they actually voted.
+
+I'll then share:
+  - Which statements have agreement across all groups
+    (genuine common ground, not just a majority)
+  - Which statements divide opinion most sharply
+    (useful to know even if we don't act on them)
+  - A plain summary of what we've found
+
+That's the basis for the final decision.
+
+[YOUR NAME]

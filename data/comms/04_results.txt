@@ -1,0 +1,86 @@
+Subject: Results — here's what we found
+
+Hi all,
+
+The votes are in. Here's what the analysis shows.
+
+
+================================================================
+  WHO WE ARE AS A GROUP
+================================================================
+
+The clustering found [NUM GROUPS] distinct opinion groups
+based on how people voted — not teams, not seniority, just
+the actual pattern of agreements and disagreements.
+
+This doesn't mean the groups are in conflict. It means
+people weight different things differently, which is normal
+and useful to know.
+
+
+================================================================
+  COMMON GROUND
+================================================================
+
+These are the statements that got meaningful approval
+across all groups — not just the majority, but everyone.
+
+[BRIDGING]
+
+
+================================================================
+  WHERE WE DIVERGE
+================================================================
+
+These statements divided opinion most sharply. One group
+was largely in favour; another largely against.
+
+[DIVISIVE]
+
+This isn't a problem to solve right now — it's just useful
+context for the decision and for future conversations.
+
+
+================================================================
+  THE REFINED CONSENSUS STATEMENT
+================================================================
+
+Based on the two-round mediation and the voting results,
+this is the statement that best reflects what the whole
+group can get behind:
+
+  "[ROUND 2 WINNER]"
+
+
+================================================================
+  WHAT THIS MEANS IN PRACTICE
+================================================================
+
+[YOUR INTERPRETATION — e.g.:
+  "The common ground points to X. The main division is
+  between people who want Y and people who prefer Z.
+  My suggestion is [DECISION], which honours the common
+  ground and acknowledges the constraint most people
+  flagged around [KEY CONSTRAINT]."]
+
+
+================================================================
+  WHAT HAPPENS NEXT
+================================================================
+
+[YOUR NEXT STEP — e.g.:
+  "I'll go ahead and book [OPTION] for [DATE].
+   I'll circulate the details once confirmed."
+
+  or
+
+  "I'd like to discuss the divisive statements briefly
+   before committing — can we take 10 minutes in the
+   next team meeting?"]
+
+
+Thanks everyone for taking part — this was a useful test
+of the process and the output is genuinely more grounded
+than a show-of-hands decision would have been.
+
+[YOUR NAME]
