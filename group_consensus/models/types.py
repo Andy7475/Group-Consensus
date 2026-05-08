@@ -16,7 +16,9 @@ class VoteValue(int, Enum):
 
 
 class StatementType(str, Enum):
-    CANDIDATE = "candidate"
+    ATOMIC = "atomic"          # short single-idea statement for Pol.is voting
+    CONTESTED = "contested"    # atomic statement where opinions directly conflict
+    CANDIDATE = "candidate"    # comprehensive candidate (legacy / final synthesis)
     CONSENSUS = "consensus"
     REFINED = "refined"
     PARTICIPANT_OPINION = "participant_opinion"
@@ -92,6 +94,19 @@ class ConsensusResult(BaseModel):
     divisive_statements: list[Statement]
     clustering: ClusteringResult
     group_consensus_threshold: float
+
+
+class MergeRecord(BaseModel):
+    """Records what the compression step merged and why."""
+    kept: str
+    absorbed: list[str]
+    reason: str
+
+
+class CompressionResult(BaseModel):
+    statements: list[Statement]
+    merges: list[MergeRecord]
+    contested_pairs: list[tuple[str, str]]   # text pairs in direct conflict
 
 
 class SessionConfig(BaseModel):
