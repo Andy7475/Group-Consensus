@@ -1,0 +1,111 @@
+{
+  "session_id": "session_01",
+  "topic": "Where should we hold the combined summer social for engineering and marketing?",
+  "statements": [
+    {
+      "id": "fc7135ee-0380-4606-b423-35f7165024b5",
+      "text": "The event must end by 8pm",
+      "type": "atomic"
+    },
+    {
+      "id": "d1643bf8-4700-4e9e-ab94-ed89fcb3459c",
+      "text": "The venue must have comprehensive step-free access throughout, accommodating wheelchair users fully",
+      "type": "atomic"
+    },
+    {
+      "id": "fb50330c-f81c-4c88-8013-c96fec6b4ba5",
+      "text": "The format should avoid prolonged standing, with seating available throughout",
+      "type": "atomic"
+    },
+    {
+      "id": "6e13ebe1-f884-4c57-9175-f6e130959c5b",
+      "text": "The venue should be in central London, within easy distance of Waterloo, in Zone 1 or Zone 2",
+      "type": "atomic"
+    },
+    {
+      "id": "604cd0e7-f742-4559-a628-a15ebce0044a",
+      "text": "The company should cover the full cost of the evening including food and drinks",
+      "type": "atomic"
+    },
+    {
+      "id": "8ae0c829-8762-4373-95ed-d26d855edaf3",
+      "text": "The venue should be quiet enough for conversation without needing to raise voices",
+      "type": "atomic"
+    },
+    {
+      "id": "d111e4a5-1e0e-4ea7-ad30-75e50cfdf1de",
+      "text": "A private or semi-private space should be used to aid conversation and hearing",
+      "type": "atomic"
+    },
+    {
+      "id": "8b921831-247b-4654-955e-7ded5e353160",
+      "text": "The atmosphere should feel relaxed and celebratory, not formal or work-like",
+      "type": "atomic"
+    },
+    {
+      "id": "d6479c71-2c76-442a-a6cd-59b9a7ea773e",
+      "text": "The venue should have energy and atmosphere",
+      "type": "atomic"
+    },
+    {
+      "id": "70c710e5-31c8-44af-a0cf-108cbc09ce49",
+      "text": "Good quality food is a priority, with vegetarian options available",
+      "type": "atomic"
+    },
+    {
+      "id": "e9dadf6a-329a-454f-ada8-c3d35bb49faf",
+      "text": "Adequate non-alcoholic drink options must be available",
+      "type": "atomic"
+    },
+    {
+      "id": "d815634c-d2c5-4c29-ae49-478197b88be7",
+      "text": "A set menu format can work well for group dining",
+      "type": "atomic"
+    },
+    {
+      "id": "8cb3db85-e526-40d3-b350-94031fd49901",
+      "text": "There should be a structured activity at the start of the event to facilitate cross-team mixing and reduce departmental clustering",
+      "type": "contested"
+    },
+    {
+      "id": "e279893c-0888-4d28-a7fc-ae5c76add00a",
+      "text": "There should be no structured activity; a good restaurant with relaxed dining is sufficient",
+      "type": "contested"
+    },
+    {
+      "id": "1d20d67e-02c9-4914-b5a9-1d4c19bcd895",
+      "text": "Any activity should feel fun and voluntary rather than forced or contrived",
+      "type": "atomic"
+    },
+    {
+      "id": "79bf68f7-5d37-4620-bafb-f5c76043ed25",
+      "text": "Hands-on activities (e.g. escape rooms, cooking classes, cocktail making) work better than passive ones for bonding",
+      "type": "atomic"
+    },
+    {
+      "id": "2cd5d1b5-767e-44f2-85f8-16eb7bbf7ece",
+      "text": "The second half of the event should be relaxed and unstructured",
+      "type": "atomic"
+    },
+    {
+      "id": "0d4a4dd9-33e1-473b-9255-ab24763ec572",
+      "text": "The event must actively facilitate genuine connection between engineering and marketing teams, not just co-existence in the same room",
+      "type": "atomic"
+    },
+    {
+      "id": "e0a7bfba-1fe3-4e0e-b73c-5de7bc062c73",
+      "text": "Attendees should be free to choose who they talk to during unstructured time",
+      "type": "atomic"
+    },
+    {
+      "id": "79a47369-928d-4c1d-9691-e47307a8ef5a",
+      "text": "The event should give people something to talk about or do together",
+      "type": "atomic"
+    },
+    {
+      "id": "f8a2a76a-6024-4e62-9bfe-d2a50da80e90",
+      "text": "The venue has some outdoor space",
+      "type": "atomic"
+    }
+  ]
+}

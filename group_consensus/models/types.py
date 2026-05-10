@@ -3,10 +3,22 @@
 from __future__ import annotations
 
 from enum import Enum
-from typing import Any
+from pathlib import Path
+from typing import Any, Self
 from uuid import UUID, uuid4
 
 from pydantic import BaseModel, Field
+
+
+class FileSerializable(BaseModel):
+    """Mixin that adds to_file / from_file to any Pydantic model."""
+
+    def to_file(self, path: Path | str) -> None:
+        Path(path).write_text(self.model_dump_json(indent=2))
+
+    @classmethod
+    def from_file(cls, path: Path | str) -> Self:
+        return cls.model_validate_json(Path(path).read_text())
 
 
 class VoteValue(int, Enum):
@@ -87,7 +99,7 @@ class ClusteringResult(BaseModel):
     statement_approval_by_cluster: dict[str, dict[int, float]]
 
 
-class ConsensusResult(BaseModel):
+class ConsensusResult(FileSerializable):
     """Statements that achieve high approval across all opinion clusters."""
 
     bridging_statements: list[Statement]
