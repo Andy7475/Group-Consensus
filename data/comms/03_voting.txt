@@ -2,8 +2,9 @@ Subject: Step 3 — two minutes to vote (closes [DEADLINE])
 
 Hi all,
 
-Final step. Below are [N] statements produced through the
-process so far. Please rate each one.
+The voting form is open. The statements below were extracted
+from everyone's responses and compressed into one idea each.
+Please rate each one.
 
 
 ================================================================
@@ -59,17 +60,14 @@ process so far. Please rate each one.
   WHAT HAPPENS NEXT
 ================================================================
 
-The votes get run through a clustering algorithm that
-groups people by similar voting patterns — not by team or
-any other label, just by how they actually voted.
+Votes are clustered by similarity of voting pattern —
+not by team or any other label. This shows which
+statements bridge all groups (genuine common ground)
+and which divide opinion most sharply.
 
-I'll then share:
-  - Which statements have agreement across all groups
-    (genuine common ground, not just a majority)
-  - Which statements divide opinion most sharply
-    (useful to know even if we don't act on them)
-  - A plain summary of what we've found
+I'll share the full results before the workshop, so
+everyone walks in with the same picture.
 
-That's the basis for the final decision.
+Workshop: [WORKSHOP DATE]
 
 [YOUR NAME]

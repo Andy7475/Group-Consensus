@@ -2,15 +2,51 @@
   HOW TO USE THESE TEMPLATES
 ================================================================
 
-One plain-text file per stage of the process. Copy the contents
-into an email or Teams message. Fill in the [PLACEHOLDERS] before
-sending.
+One plain-text file per stage. Copy into an email or Teams
+message. Fill in the [PLACEHOLDERS] before sending.
 
-  00_intro.txt         Send once at the start — explains everything
-  01_opinions.txt      Stage 1 — collect free-text opinions
-  02_critiques.txt     Stage 2 — share round 1 winner, ask for critiques
-  03_voting.txt        Stage 3 — share refined statements for voting
-  04_results.txt       After clustering — share what was found
+  00_intro.txt         Send once at the start — explains
+                       the process and the timeline
+
+  01_opinions.txt      Collect free-text opinions from
+                       everyone (feeds both tracks)
+
+  02_ai_draft.txt      Optional — share the Mediator's
+                       quick AI read while voting is open.
+                       Useful for planning and for catching
+                       anything the AI obviously missed.
+
+  03_voting.txt        Send the atomic statement voting
+                       form (MS Forms / Excel Online)
+
+  04_results.txt       After clustering — share what was
+                       found and frame the workshop
+
+
+----------------------------------------------------------------
+TWO TRACKS, ONE SET OF OPINIONS
+
+This process runs two things in parallel from the same
+opinions:
+
+  TRACK A (fast, immediate)
+  Run 03_mediator.ipynb as soon as opinions are in.
+  Produces a quick AI-generated consensus statement —
+  useful for advance planning, narrowing real options,
+  and briefing the facilitator before votes are back.
+  Optional: share via 02_ai_draft.txt for a sense-check.
+
+  TRACK B (democratic, ~1 week)
+  Run 01_mediate.ipynb to extract atomic statements and
+  generate the voting form. Circulate via 03_voting.txt.
+  Run 02_analyse.ipynb once votes are in to cluster
+  opinion groups and identify bridging statements.
+
+Both outputs go into the final workshop. The Mediator
+statement is a working hypothesis; the atomic/voting
+statement is the democratic anchor. The facilitator
+uses both.
+
 
 ----------------------------------------------------------------
 PLACEHOLDERS TO FILL IN
@@ -20,27 +56,34 @@ PLACEHOLDERS TO FILL IN
 
   [YOUR NAME]          Your name / sign-off
 
-  [DEADLINE]           e.g. "Wednesday 5pm" or "end of this week"
+  [DEADLINE]           e.g. "Wednesday 5pm"
 
   [RESPONSE METHOD]    How people should respond
                        e.g. "reply to this email"
                             "fill in this form: [link]"
-                            "add your row to this spreadsheet: [link]"
 
-  [ROUND 1 WINNER]     Paste the winning statement from 01_mediate.ipynb
+  [MEDIATOR_STATEMENT] Paste the Mediator consensus
+                       statement from 03_mediator.ipynb
 
-  [STATEMENT 1..N]     Paste the statements from the voting form template
-                       printed at the end of 01_mediate.ipynb
+  [STATEMENT 1..N]     Paste statements from the voting
+                       form template printed by
+                       01_mediate.ipynb
 
-  [BRIDGING]           Paste bridging statements from 02_analyse.ipynb
-  [DIVISIVE]           Paste divisive statements from 02_analyse.ipynb
+  [BRIDGING]           Paste bridging statements from
+                       02_analyse.ipynb
+  [DIVISIVE]           Paste divisive statements from
+                       02_analyse.ipynb
   [NUM GROUPS]         Number of opinion clusters found
+
+  [WORKSHOP DATE]      When the group will meet to
+                       finalise the decision
+
 
 ----------------------------------------------------------------
 FORMATTING NOTES
 
-  - Plain ASCII throughout — renders correctly in Outlook, Gmail,
-    Teams, and Slack without any special formatting
-  - Keep line length under 65 characters for clean wrapping
-  - The === and --- dividers are just dashes, no special characters
+  - Plain ASCII throughout — renders in Outlook, Gmail,
+    Teams, and Slack without special formatting
+  - Keep line length under 65 characters
+  - The === and --- dividers are plain dashes
 ================================================================

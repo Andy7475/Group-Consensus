@@ -10,21 +10,58 @@ slow. Workshops surface the loudest voices. Surveys miss
 the nuance. The reservations people didn't voice come out
 six months later.
 
-In 2024, Google DeepMind published research showing that an
-AI-assisted process produced better-endorsed outcomes than
-human facilitation alone — tested with over 5,000 people on
-genuinely contested topics. The AI reads every participant's
-view, drafts candidate consensus statements, and selects the
-one with the broadest real support. A human facilitator then
-works with that, rather than spending the first hour of a
-workshop discovering what people think.
+This tool tries to fix that by running two things in
+parallel from a single set of participant opinions.
 
-I've extended this with an opinion mapping layer. After the
-deliberation, participants spend two minutes rating a
-shortlist of statements. The system groups people by how
-similarly they voted and produces a simple map showing where
-the groups sit, what bridges all of them, and where the real
-tension is. A facilitator walks in with that picture already.
+
+----------------------------------------------------------------
+  TRACK A: QUICK AI READ
+----------------------------------------------------------------
+
+As soon as opinions are in, an AI reads all responses,
+generates candidate consensus statements, and selects the
+one with the broadest predicted support (Schulze voting).
+Turnaround is minutes.
+
+This is useful for advance planning — narrowing real-world
+options, briefing a facilitator, getting a working
+hypothesis before the democratic results are back.
+
+Based on Google DeepMind's Habermas Machine research
+(2024, tested with 5,000+ people on contested political
+topics).
+
+
+----------------------------------------------------------------
+  TRACK B: DEMOCRATIC VOTE
+----------------------------------------------------------------
+
+The same opinions are broken into short atomic statements —
+one idea each — and sent out as a voting form. Participants
+vote Agree / Pass / Disagree. Takes about a week to collect.
+
+The votes reveal not just which statements are popular but
+whether there are distinct opinion groups and which
+statements genuinely bridge all of them. This is the
+democratic anchor for the final discussion — grounded in
+what people actually chose, not what the AI predicted.
+
+Based on Polis (Computational Democracy Project), used by
+governments and organisations for large-scale deliberation.
+
+
+----------------------------------------------------------------
+  THE WORKSHOP
+----------------------------------------------------------------
+
+Both outputs feed a short facilitated workshop where the
+group finalises the decision. The AI has done the
+groundwork — surfacing what people think, where opinion
+clusters, and where the real tension is. The workshop
+focuses on the actual decision.
+
+Typical participant time: about 10 minutes across all steps,
+spread over a week, plus the workshop.
 
 
 ----------------------------------------------------------------
@@ -32,16 +69,16 @@ tension is. A facilitator walks in with that picture already.
 ----------------------------------------------------------------
 
 I'm looking for a small number of people to try this on
-something real — a team decision, a ways-of-working question,
-anything where a group needs to land somewhere together.
+something real — a team decision, a ways-of-working
+question, anything where a group needs to land somewhere
+together.
 
-Your time across all three steps: about 10 minutes, spread
-over a week.
-
-In return you get a clear picture of where opinion actually
-sits in your group, a set of consensus statements to work
-with, and a straight debrief on what the process did and
-didn't do well.
+In return you get:
+  - A quick AI consensus draft within hours of opinions
+  - A full opinion map showing where agreement actually is
+  - The specific points that bridge all groups
+  - The specific points that divide them
+  - A clear basis for the workshop conversation
 
 If that sounds useful, get in touch.
 

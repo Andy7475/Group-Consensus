@@ -3,6 +3,8 @@ Subject: Step 1 — share your view (5 mins, closes [DEADLINE])
 Hi all,
 
 Step 1 is open. One question, free text, no right answer.
+Your response feeds both the quick AI analysis and the
+voting round, so the more honest the better.
 
 
 ================================================================
@@ -36,20 +38,20 @@ Step 1 is open. One question, free text, no right answer.
 
   Mention things others might not think to raise
     Accessibility, dietary needs, budget, travel time —
-    anything that makes an option work or not work for you
-    personally.
+    anything that makes an option work or not work for
+    you personally.
 
   Don't filter yourself
-    The system is looking for genuine common ground, not
-    the polite answer. If something matters to you, say it.
+    The system looks for genuine common ground, not the
+    polite answer. If something matters to you, say it.
 
   Length doesn't matter
-    Three sentences or three paragraphs — both are fine.
+    Three sentences or three paragraphs — both work.
     Bullet points are fine.
 
 
 ----------------------------------------------------------------
-I'll share the output after [DEADLINE]. Expect something
-in your inbox on [DATE].
+I'll share the AI's quick read shortly after [DEADLINE],
+and the voting form will follow within a couple of days.
 
 [YOUR NAME]

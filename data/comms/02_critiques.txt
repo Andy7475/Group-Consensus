@@ -1,56 +1,59 @@
-Subject: Step 2 — does this capture it? (3 mins, closes [DEADLINE])
+Subject: Quick AI read — does this look right? (optional, closes [DEADLINE])
 
 Hi all,
 
-The AI has read everyone's responses and produced a draft
-consensus statement. Here it is.
+While the voting form is open, I wanted to share what the
+AI produced from your responses. It's a useful planning
+aid and a good sense-check before we see the vote results.
 
 
 ================================================================
-  ROUND 1 DRAFT
+  AI CONSENSUS DRAFT
 ================================================================
 
-  "[ROUND 1 WINNER]"
+  "[MEDIATOR_STATEMENT]"
 
 
 ================================================================
   HOW THIS WAS PRODUCED
 ================================================================
 
-The system read all [N] responses, generated [N] candidate
+The AI read all [N] responses, generated [N] candidate
 statements trying to reflect the group's shared concerns,
 then predicted how each person would rank them based on
-what they wrote. The statement above won that vote.
+what they wrote. The statement above had the broadest
+predicted support.
 
 It isn't a summary or an average. It's an attempt at a
 formulation the whole group could accept — including people
 who hold quite different views.
 
+Note: this is an AI prediction, not a vote. The actual
+voting results (which you'll complete separately) may
+tell a different story — especially around disagreements
+the AI smoothed over.
+
 
 ================================================================
-  WHAT I NEED FROM YOU
+  DOES THIS LOOK RIGHT?
 ================================================================
 
-One question:
+Optional — no response needed if this seems fair.
 
-  What's missing or wrong with this statement?
-  What would you change?
-
-A sentence or two is enough. Focus on what's important to
-you that isn't reflected — not on whether you like the
-phrasing.
-
-If you're happy with it as it stands, no response needed.
-
+If the statement has missed something important to you —
+a constraint it ignored, a tension it glossed over — a
+sentence saying what is helpful.
 
   [RESPONSE METHOD]
 
   Deadline: [DEADLINE]
 
+Any critiques will feed into a second AI refinement round.
+I'll share the revised statement alongside the vote results.
+
 
 ----------------------------------------------------------------
-People who respond with a critique will feed directly into
-round 2. The revised statement will come back to you before
-the vote.
+The voting form is still open until [DEADLINE]. Make sure
+you've filled that in — it's the democratic part.
 
 [YOUR NAME]

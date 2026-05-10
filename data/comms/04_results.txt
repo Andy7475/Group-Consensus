@@ -1,55 +1,75 @@
-Subject: Results — here's what we found
+Subject: Results — here's what we found, workshop on [WORKSHOP DATE]
 
 Hi all,
 
-The votes are in. Here's what the analysis shows.
+The votes are in. Here's what the analysis shows. We'll
+use this in the workshop on [WORKSHOP DATE] to finalise
+the decision.
 
 
 ================================================================
   WHO WE ARE AS A GROUP
 ================================================================
 
-The clustering found [NUM GROUPS] distinct opinion groups
-based on how people voted — not teams, not seniority, just
-the actual pattern of agreements and disagreements.
+The analysis found [NUM GROUPS] distinct opinion groups
+based on how people voted — not teams, not seniority,
+just the actual pattern of agreements and disagreements.
 
 This doesn't mean the groups are in conflict. It means
-people weight different things differently, which is normal
-and useful to know.
+people weight different things differently, which is
+normal and useful to know going into the workshop.
 
 
 ================================================================
   COMMON GROUND
 ================================================================
 
-These are the statements that got meaningful approval
-across all groups — not just the majority, but everyone.
+These statements got meaningful approval across all groups —
+not just the majority, but everyone.
 
 [BRIDGING]
+
+These are the anchor points. Any decision we land on should
+honour all of them.
 
 
 ================================================================
   WHERE WE DIVERGE
 ================================================================
 
-These statements divided opinion most sharply. One group
-was largely in favour; another largely against.
+These statements divided opinion most sharply — one group
+largely in favour, another largely against.
 
 [DIVISIVE]
 
-This isn't a problem to solve right now — it's just useful
-context for the decision and for future conversations.
+This is where the workshop conversation is most needed.
+Knowing this in advance means we can focus the discussion
+rather than discovering it in the room.
 
 
 ================================================================
-  THE REFINED CONSENSUS STATEMENT
+  WHAT THE AI READ
 ================================================================
 
-Based on the two-round mediation and the voting results,
-this is the statement that best reflects what the whole
-group can get behind:
+Alongside the vote, the AI produced its own consensus
+statement directly from your original responses — before
+seeing any votes. Here it is for comparison:
 
-  "[ROUND 2 WINNER]"
+  "[MEDIATOR_STATEMENT]"
+
+The AI statement tends to be smoother and more holistic.
+The voted statement is grounded in what people actually
+agreed on. Both are useful inputs; neither replaces
+the other.
+
+
+================================================================
+  THE GROUP CONSENSUS STATEMENT
+================================================================
+
+Built from the statements the group voted to agree on:
+
+  [ATOMIC_GROUP_STATEMENT]
 
 
 ================================================================
@@ -65,22 +85,23 @@ group can get behind:
 
 
 ================================================================
-  WHAT HAPPENS NEXT
+  WORKSHOP — [WORKSHOP DATE]
 ================================================================
 
-[YOUR NEXT STEP — e.g.:
-  "I'll go ahead and book [OPTION] for [DATE].
-   I'll circulate the details once confirmed."
+We'll spend [TIME] together to finalise the decision.
+The agenda:
 
-  or
+  1. Walk through the common ground (5 mins)
+  2. Discuss the divisive statements (10 mins)
+  3. Agree a decision (10 mins)
 
-  "I'd like to discuss the divisive statements briefly
-   before committing — can we take 10 minutes in the
-   next team meeting?"]
+Come prepared to talk about [DIVISIVE TOPIC IF KNOWN].
+
+[MEETING LINK / LOCATION]
 
 
-Thanks everyone for taking part — this was a useful test
-of the process and the output is genuinely more grounded
-than a show-of-hands decision would have been.
+Thanks everyone for taking part. The output is more
+grounded than a show-of-hands would have been — you'll
+see why in the workshop.
 
 [YOUR NAME]

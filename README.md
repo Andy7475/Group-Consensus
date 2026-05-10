@@ -1,73 +1,84 @@
 # Group Consensus
 
-An AI-mediated platform for scalable group deliberation, combining two complementary research approaches:
+An AI-assisted deliberation tool for groups that need to find common ground before a decision. It runs two complementary tracks from the same set of participant opinions, producing outputs that serve different purposes in a facilitated process.
 
-- **Habermas Machine** (Google DeepMind, *Science* 2024) — LLM-mediated caucus deliberation that generates and refines group consensus statements iteratively, selecting winners via social-choice voting
-- **Polis** (Computational Democracy Project) — opinion clustering that maps where participants stand across a topic by collecting votes on statements and running K-means to reveal opinion groups and cross-group consensus
-
-The idea is that the Habermas-style mediation does the hard work of surfacing what people actually need, fear, and value in small groups — then those refined statements feed into a Polis-style wide-distribution system where a much larger population can engage. Human mediators get a dashboard showing the consensus landscape so they can intervene precisely where it matters.
+Based on two research traditions:
+- **Habermas Machine** (Google DeepMind, *Science* 2024) — LLM-mediated deliberation that generates and refines group consensus statements iteratively, selecting winners via Schulze social-choice voting
+- **Polis** (Computational Democracy Project) — opinion clustering that maps where participants stand by collecting votes on statements and running K-means to reveal opinion groups and cross-group consensus
 
 ---
 
 ## How It Works
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    PHASE 1: DEEP DELIBERATION                   │
-│              (Habermas Machine approach, small groups)          │
-│                                                                 │
-│  Participants submit opinions → LLM generates N candidate       │
-│  statements → reward model predicts preferences → Schulze       │
-│  social-choice voting selects winner → participants critique    │
-│  → repeat until convergence                                     │
-└─────────────────────────┬───────────────────────────────────────┘
-                          │ refined consensus statements
-                          ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    PHASE 2: WIDE DISTRIBUTION                   │
-│              (Polis-style clustering, large groups)             │
-│                                                                 │
-│  Refined statements circulated broadly → participants vote      │
-│  agree/disagree/pass → opinion matrix built → K-means          │
-│  clustering reveals opinion groups → group-informed consensus   │
-│  identified (statements resonating across ALL clusters)         │
-└─────────────────────────┬───────────────────────────────────────┘
-                          │ consensus map + bridging statements
-                          ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    PHASE 3: HUMAN FACILITATION                  │
-│                                                                 │
-│  Mediators view 2D opinion landscape, cluster breakdown,        │
-│  group-informed consensus scores, and divisive statements.      │
-│  AI has done the groundwork; facilitators intervene with        │
-│  full situational awareness.                                    │
-└─────────────────────────────────────────────────────────────────┘
+                    OPINIONS COLLECTED
+                    (free-text, one per participant)
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+              ▼                         ▼
+  TRACK A: MEDIATOR               TRACK B: ATOMIC VOTING
+  03_mediator.ipynb               01_mediate.ipynb
+  (~10 minutes)                   (~1 week to collect votes)
+                                  + 02_analyse.ipynb
+  LLM generates candidate         ─────────────────────────
+  group statements from           Atomic statements extracted
+  raw opinions. Schulze           from opinions → compressed
+  voting picks the one            → participants vote agree/
+  with broadest predicted         pass/disagree → opinion
+  support.                        matrix → K-means clustering
+                                  → bridging and divisive
+  Use for: advance planning,      statements identified →
+  narrowing real-world            group statement synthesised
+  options, briefing a             from agreed points
+  facilitator before the
+  vote closes.                    Use for: democratic anchor,
+                                  opinion map, surfacing
+                                  hidden disagreements.
+              │                         │
+              └────────────┬────────────┘
+                           │
+                           ▼
+                  FACILITATED WORKSHOP
+                  ─────────────────────
+                  Facilitator arrives with:
+                  - Mediator statement (quick hypothesis)
+                  - Atomic statement (democratic anchor)
+                  - Opinion clusters (who agrees with whom)
+                  - Divisive statements (where to focus)
+
+                  Group finalises the decision.
 ```
 
 ---
 
-## Key Concepts
+## The Two Tracks
 
-### Habermas Machine (Phase 1)
+### Track A — Mediator (`03_mediator.ipynb`)
 
-From [Tessler et al., 2024](https://www.science.org/doi/10.1126/science.adq2852), tested with 5,734 UK participants on contested topics. The original system uses a fine-tuned reward model; this implementation uses Claude as both generator and judge, which is a valid approximation for a new deployment.
+Runs immediately once opinions are in. The LLM reads all opinions, generates 5 candidate group statements from different angles, predicts how each participant would rank them based on what they wrote, and Schulze voting picks the winner. Optional: share the winner with participants and ask for critiques to run a second refinement round.
 
-Core loop:
-1. Participants write free-text opinions on a topic
-2. LLM reads all opinions and generates 16 candidate consensus statements
-3. For each candidate, the LLM predicts how each participant would rank it
-4. **Schulze method** (social-choice voting) selects the winning statement from predicted rankings
-5. Participants can critique the statement
-6. Critiques feed back into the next generation round
-7. Repeat until the group is satisfied or a round limit is hit
+The output is a polished, holistic statement — good for advance planning. It doesn't require a voting round, and the turnaround is minutes. The trade-off: the Schulze ranking is an AI prediction of preference, not an actual vote. Participants never saw or chose between the candidates.
 
-### Polis-Style Clustering (Phase 2)
+### Track B — Atomic Voting (`01_mediate.ipynb` + `02_analyse.ipynb`)
 
-From [compdemocracy/polis](https://github.com/compdemocracy/polis). Participants vote Agree (+1), Disagree (-1), or Pass (0) on each statement. This builds an opinion matrix. K-means (k=2–5, chosen by silhouette score) clusters participants into opinion groups. A **group-informed consensus** statement is one where every cluster has above-threshold approval — it bridges divides rather than just winning a majority.
+Takes longer because it requires real votes. The LLM extracts short atomic statements from opinions (one idea each, 5–15 words), compresses duplicates, flags genuine contradictions as CONTESTED. These go out as a voting form — MS Forms, Excel Online, or a shared spreadsheet. Participants vote Agree / Pass / Disagree on each statement.
 
-### Why Combine Them
+Votes are loaded into an opinion matrix, clustered by similarity of voting pattern (UMAP + K-means), and analysed for bridging statements (≥60% approval across all clusters) and divisive ones (sharp splits between clusters). The bridging statements feed a final synthesis step that produces the group statement.
 
-The Habermas Machine produces a small number of high-quality, carefully refined statements. Polis handles scale and reveals the opinion landscape. Neither alone is sufficient: raw Polis without curation can flood participants with poor statements; the Habermas Machine without scale produces small-group outputs that may not generalise. Together they deliver quality and reach.
+The output is grounded in what people actually agreed on. It also surfaces group structure — who clusters with whom, and where opinion divides — which the Mediator misses entirely. The democratic legitimacy matters when the group needs to own the outcome.
+
+---
+
+## Notebooks
+
+| Notebook | Purpose | Time |
+|---|---|---|
+| `03_mediator.ipynb` | Run Mediator track, optional critique round, compare outputs | ~10 min |
+| `01_mediate.ipynb` | Extract atomic statements, review, save voting form | ~15 min |
+| `02_analyse.ipynb` | Load votes, cluster, detect bridging/divisive statements | ~5 min after votes in |
+
+Run `03_mediator.ipynb` immediately after collecting opinions. Run `01_mediate.ipynb` at the same time to generate the voting form. Run `02_analyse.ipynb` once votes are back.
 
 ---
 
@@ -76,21 +87,23 @@ The Habermas Machine produces a small number of high-quality, carefully refined 
 ```
 group_consensus/
 ├── models/
-│   └── types.py          # Pydantic data models (Participant, Statement, Vote, etc.)
+│   └── types.py              # Pydantic data models
 ├── mediation/
-│   ├── statement_model.py # LLM-based consensus statement generation (Claude API)
-│   ├── reward_model.py    # LLM-as-judge preference prediction
-│   ├── social_choice.py   # Schulze voting method
-│   └── mediator.py        # Orchestrates the full deliberation loop
+│   ├── async_atomic_model.py # Extract, compress, synthesise atomic statements
+│   ├── async_mediator.py     # Async Mediator + StatementModel + RewardModel
+│   ├── statement_model.py    # LLM candidate statement generation
+│   ├── reward_model.py       # LLM-as-judge preference prediction
+│   ├── social_choice.py      # Schulze voting method
+│   └── mediator.py           # Synchronous deliberation loop
 ├── clustering/
-│   ├── opinion_matrix.py  # Builds and manages the vote matrix
-│   ├── engine.py          # K-means + PCA/dimensionality reduction
-│   └── consensus.py       # Group-informed consensus detection
+│   ├── opinion_matrix.py     # Vote matrix
+│   ├── engine.py             # UMAP + K-means clustering
+│   └── consensus.py          # Bridging/divisive statement detection
 ├── pipeline/
-│   └── session.py         # End-to-end session: mediation → clustering
+│   └── session.py            # End-to-end session orchestration
 └── api/
-    ├── main.py            # FastAPI app
-    └── routes/            # REST endpoints
+    ├── main.py               # FastAPI app
+    └── routes/               # REST endpoints
 ```
 
 ---
@@ -108,53 +121,20 @@ group_consensus/
 ```bash
 git clone https://github.com/andy7475/group-consensus
 cd group-consensus
-
-# Install dependencies
 uv sync
-
-# Configure environment
 cp .env.example .env
-# Edit .env and add your ANTHROPIC_API_KEY
-
-# Run tests
+# Add your ANTHROPIC_API_KEY to .env
 uv run pytest
-
-# Start the API server
-uv run uvicorn group_consensus.api.main:app --reload
 ```
 
-### Run a Demo Deliberation
+### Run the notebooks
 
-```python
-import asyncio
-from group_consensus.pipeline.session import ConsensusSession
-
-async def main():
-    session = ConsensusSession(
-        topic="How should our organisation approach remote working policy?",
-        participants=[
-            {"id": "p1", "name": "Alice"},
-            {"id": "p2", "name": "Bob"},
-            {"id": "p3", "name": "Carol"},
-        ]
-    )
-
-    # Phase 1: gather opinions and mediate
-    opinions = {
-        "p1": "I value flexibility and work better without a commute.",
-        "p2": "I find it hard to collaborate remotely and miss the office energy.",
-        "p3": "A hybrid approach seems fair but we need clear guidelines.",
-    }
-    result = await session.run_mediation(opinions, max_rounds=3)
-    print("Consensus statement:", result.consensus_statement.text)
-
-    # Phase 2: circulate statements and cluster
-    # (add more participants voting on the refined statements)
-    cluster_result = await session.run_clustering()
-    print("Group-informed consensus:", cluster_result.bridging_statements)
-
-asyncio.run(main())
+```bash
+cd notebooks
+uv run jupyter notebook
 ```
+
+Open `03_mediator.ipynb` for the fast track, or `01_mediate.ipynb` to start the atomic voting track.
 
 ---
 
@@ -163,32 +143,24 @@ asyncio.run(main())
 | Variable | Description | Default |
 |---|---|---|
 | `ANTHROPIC_API_KEY` | Anthropic API key | required |
-| `CLAUDE_MODEL` | Model for statement generation | `claude-sonnet-4-6` |
-| `NUM_CANDIDATE_STATEMENTS` | Candidates generated per round | `8` |
-| `MAX_DELIBERATION_ROUNDS` | Max mediation iterations | `5` |
-| `MIN_CLUSTER_APPROVAL` | Threshold for group-informed consensus | `0.6` |
-| `DATABASE_URL` | SQLAlchemy connection string | `sqlite:///consensus.db` |
+| `CLAUDE_MODEL` | Model for generation and ranking | `claude-sonnet-4-6` |
+| `NUM_CANDIDATE_STATEMENTS` | Candidates per Mediator round | `5` |
+| `MAX_DELIBERATION_ROUNDS` | Max Mediator iterations | `5` |
+| `MIN_CLUSTER_APPROVAL` | Threshold for bridging statements | `0.6` |
 
 ---
 
 ## Roadmap
 
-- [x] Core data models
 - [x] Schulze social-choice voting
-- [x] LLM-based statement generation (Claude)
-- [x] LLM-as-judge reward model
-- [x] Deliberation loop orchestration
-- [x] Opinion matrix and K-means clustering
-- [x] Group-informed consensus detection
-- [x] Pipeline session combining both phases
-- [x] FastAPI REST endpoints
-- [ ] Mediator dashboard (React frontend)
-- [ ] Real-time session management (WebSockets)
-- [ ] Export to Polis-compatible format
-- [ ] Fine-tuned reward model (replace LLM-as-judge with trained model)
-- [ ] Multi-language support
-- [ ] Persistent database backend (PostgreSQL)
-- [ ] Authentication and multi-tenancy
+- [x] LLM-based statement generation and candidate ranking
+- [x] Deliberation loop with critique rounds (`03_mediator.ipynb`)
+- [x] Atomic statement extraction and compression
+- [x] Opinion matrix, UMAP + K-means clustering
+- [x] Bridging/divisive statement detection
+- [x] Group statement synthesis from agreed atomic points
+- [x] Side-by-side comparison of both approaches
+- [ ] Real world test
 
 ---
 
@@ -203,4 +175,4 @@ asyncio.run(main())
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE). Note that if you incorporate code from the Habermas Machine repository directly, that code is Apache 2.0; Polis is AGPLv3. Check licences carefully before production deployment.
+MIT — see [LICENSE](LICENSE). If you incorporate code from the Habermas Machine repository directly, that code is Apache 2.0; Polis is AGPLv3. Check licences before production deployment.

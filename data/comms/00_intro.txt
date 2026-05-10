@@ -1,102 +1,102 @@
-Subject: [TOPIC] — trying something a bit different
+Subject: [TOPIC] — how we're going to decide this
 
 Hi all,
 
-We need to decide [TOPIC], and rather than one person
-picking something and hoping for the best, I want to try
-a process that actually surfaces what works for everyone
-before we commit.
+We need to decide [TOPIC]. Rather than one person picking
+something and hoping for the best, I want to try a process
+that surfaces what actually works for everyone before we
+commit.
 
-It takes about 10 minutes across three short steps spread
-over [TIMEFRAME]. Here's what it involves.
+It takes about 10 minutes of your time, spread across three
+short steps over [TIMEFRAME].
 
 
 ================================================================
   THE IDEA
 ================================================================
 
-Most group decisions fail in one of two ways: the loudest
-voice wins, or we compromise so much that nobody's actually
-happy with the outcome.
+Most group decisions go wrong in one of two ways: the
+loudest voice wins, or we compromise so much that nobody's
+happy. This process tries to fix both.
 
-This process uses an AI tool to read everyone's views and
-draft candidate consensus statements — things it thinks
-the whole group could get behind. We then react to those,
-critique them, and vote on a shortlist. The AI does the
-synthesis work; all the actual input and judgment comes
-from us.
+It uses an AI tool to read everyone's views and identify
+where genuine agreement exists — and where it doesn't.
+The AI does the synthesis work; all the actual input and
+judgment comes from us.
 
-It's based on research from Google DeepMind (they ran it
-with 5,000+ people on contested political topics and it
-outperformed human mediators at finding common ground).
-We're using it to pick a venue, which feels like a lower
-stakes proving ground.
+Your responses feed two things running in parallel:
+
+  QUICK AI READ (immediate)
+  As soon as opinions are in, the AI produces a draft
+  consensus statement — its best read of where the group
+  could land. I'll share this for a sense-check. It's
+  useful for planning and for catching anything the AI
+  obviously missed.
+
+  DEMOCRATIC VOTE (takes about a week)
+  Your opinions are broken into short atomic statements —
+  one idea each. You vote Agree / Pass / Disagree on each.
+  The results show which statements genuinely bridge
+  everyone, which divide opinion, and where the real
+  tension is.
+
+Both feed a short workshop where we finalise the decision
+together. The AI has done the groundwork; we do the
+deciding.
+
+It's based on research from Google DeepMind (tested with
+5,000+ people on contested political topics) and Polis
+(used by governments for large-scale deliberation).
 
 
 ================================================================
-  THE THREE STEPS
+  YOUR THREE STEPS
 ================================================================
 
   STEP 1 — SHARE YOUR VIEW  (~5 minutes)
   ----------------------------------------
-  One free-text question. Tell us what matters to you and
-  — importantly — what your hard constraints are. Things
-  that would make the option unworkable for you, not just
-  less ideal.
+  One free-text question. What matters to you and what
+  are your hard constraints — things that would make an
+  option genuinely unworkable, not just less ideal.
 
-  No word limit. Bullet points are fine. More honest =
-  better output.
-
-  I'll ask for this separately once everyone's in.
+  No word limit. Bullet points are fine.
 
 
-  STEP 2 — QUICK REACTION  (~3 minutes)
+  STEP 2 — QUICK REACTION  (~2 minutes, optional)
   ----------------------------------------
-  After I've run everyone's responses through the system,
-  I'll share a draft consensus statement it produced.
-
-  All I'll ask is: what's missing or wrong with this?
-  If you're happy with it, no action needed. If it's missed
-  something important to you, a sentence or two saying what
-  is enough.
+  I'll share the AI's draft statement for a sense-check.
+  If it's missed something important, a sentence saying
+  what. If it looks right, no reply needed.
 
 
   STEP 3 — VOTE  (~2 minutes)
   ----------------------------------------
-  A shortlist of 5-6 refined statements. You rate each one:
-  Agree / Pass / Disagree. Takes about two minutes.
-
-  The results show us not just which statement "wins" but
-  whether there are different opinion clusters in the group
-  and which statements genuinely bridge them.
+  A list of short statements drawn from everyone's views.
+  Rate each: Agree / Pass / Disagree.
 
 
 ================================================================
   WHAT HAPPENS WITH YOUR RESPONSES
 ================================================================
 
-Your free-text opinion goes directly into the AI as context
-for generating the consensus statements. It's not summarised
-or paraphrased — it's read as-is. The system is trying to
-find formulations that reflect what everyone actually said,
-not an average of it.
+Your free-text opinion goes directly into the AI as
+context. It isn't summarised or paraphrased — it's read
+as-is. The system finds formulations that reflect what
+everyone actually said, not an average of it.
 
-I can share the full output at any point if you want to see
-what the system produced and why.
+I can share the full output at any point.
 
 
 ================================================================
   TIMELINE
 ================================================================
 
-  Step 1 open:   [DATE]
-  Step 1 closes: [DEADLINE]
-  Step 2:        [DATE, roughly 1-2 days after step 1]
-  Step 3:        [DATE]
-  Decision:      [DATE]
+  Step 1 (opinions):   [DATE] — [DEADLINE]
+  Quick AI draft:      [DATE, 1-2 days after step 1]
+  Step 3 (vote):       [DATE] — [DEADLINE]
+  Workshop:            [WORKSHOP DATE]
 
 
-Any questions, just ask. Looking forward to seeing what it
-surfaces.
+Any questions, just ask.
 
 [YOUR NAME]
