@@ -175,4 +175,4 @@ Open `03_mediator.ipynb` for the fast track, or `01_mediate.ipynb` to start the 
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE). If you incorporate code from the Habermas Machine repository directly, that code is Apache 2.0; Polis is AGPLv3. Check licences before production deployment.
+MIT — see [LICENSE](LICENSE). This project implements ideas from the Habermas Machine (Apache 2.0) and Pol.is (AGPLv3) independently, without incorporating their code. If you add code from either repository directly, check their licences before doing so (e.g. if forking this repo or modifying it).
